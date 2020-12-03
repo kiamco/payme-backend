@@ -1,0 +1,47 @@
+{
+  "name": "payme-backend",
+  "version": "1.0.0",
+  "description": "P2P platform using the Stellar ledger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/app.js",
+    "dev": "nodemon src/app.ts",
+    "build": "tsc -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiamco/payme-backend.git"
+  },
+  "author": "kim kiamco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiamco/payme-backend/issues"
+  },
+  "homepage": "https://github.com/kiamco/payme-backend#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.9",
+    "@types/node": "^14.14.10",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.8",
+    "@types/crypto-js": "^4.0.1",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/mongoose": "^5.10.1",
+    "@types/stellar-sdk": "^0.15.1",
+    "axios": "^0.21.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.1",
+    "stellar-sdk": "^7.0.0"
+  }
+}
