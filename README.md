@@ -20,6 +20,8 @@ P2P platform using the the Stellar Ledger
   
 # Endpoints
 
+1.) registration
+
   | endpoint | req | description |
   |----------|-----|-------------|
   | /register | post | creates an account |
@@ -34,6 +36,8 @@ P2P platform using the the Stellar Ledger
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
   
+2.) login
+
   | endpoint | req | description |
   |----------|-----|-------------|
   | /login    | post | user login |
