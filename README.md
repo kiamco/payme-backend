@@ -20,10 +20,52 @@ P2P platform using the the Stellar Ledger
   
 # Endpoints
 
-  | endpoint | req | description | body | response |
-  |----------|-----|-------------|------|-----------|
-  | /register | post | creates an account | 
+  | endpoint | req | description |
+  |----------|-----|-------------|
+  | /register | post | creates an account |
+  
+### body
+
+### response
+
+```
+
+```
+  
+  | endpoint | req | description |
+  |----------|-----|-------------|
   | /login    | post | user login |
+  
+ ### body
+ ```
+ {
+    "name": "kim kiamco1",
+    "email": "sample4@gmail.com",
+    "password": "putangina1"
+}
+```
+
+ ### response
+
+ ```
+{
+    "message": "user logged in",
+    "data": {
+        "email": "sample4@gmail.com",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbXBsZTRAZ21haWwuY29tIiwiX2lkIjoiNWZjODI3NDliOWExNDMyMWE0YmEwMTQ0IiwiaWF0IjoxNjA2OTU1MTQ1LCJleHAiOjE2MDY5NTg3NDV9.6WXPJBoLH2cKKKdo0esQiLUg9gmRptKMHMO_NoYCnLo",
+        "name": "kim kiamco1",
+        "stellarAccount": "GDNA66CQDFPBP4NIDMBTAG6FQTGKVHUGV5BTHWBSCQZUHV6WKUHHEU2Z",
+        "accountInfo": [
+            {
+                "balance": "10000.0000000",
+                "buying_liabilities": "0.0000000",
+                "selling_liabilities": "0.0000000",
+                "asset_type": "native"
+            }
+        ]
+    }
+}
+ ```
   
 
 # Tech stack
