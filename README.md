@@ -9,9 +9,9 @@ P2P platform using the the Stellar Ledger
 
   - [x] account creation
   
-  - [ ] user to user transactions
+  - [ ] user to user transactions (also use test server)
   
-  - [ ] convert fiat currenices to crypto during transfer
+  - [ ] convert fiat currenices to crypto during transfer (use stellars test anhor server)
   
   - [ ] reset password for accounts
   
