@@ -13,7 +13,7 @@ P2P platform using the the Stellar Ledger
   
   - [ ] convert fiat currenices to crypto during transfer (use stellars test anhor server)
   
-  - [ ] reset password for accounts
+  - [ ] reset password for user accounts
   
   note: this should be made with stellars test network because we wont be able to get anchors to give us an API key without complete functional product. This app also needs to get audited before its approved for real money transactions. 
   
