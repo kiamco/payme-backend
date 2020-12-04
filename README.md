@@ -28,10 +28,32 @@ P2P platform using the the Stellar Ledger
   
 ### body
 
-### response
+```
+{
+    "name": "kim kiamco1",
+    "email": "sample5@gmail.com",
+    "password": "putangina1"
+}
 
 ```
 
+### response
+
+```
+{
+    "message": "User created",
+    "data": {
+        "_id": "5fcabb3b7947c78d4f87dbd1",
+        "name": "kim kiamco1",
+        "email": "sample5@gmail.com",
+        "password": "$2a$10$TfmoyG2VfxOSyw2SdD6HvuHl2ebWnvkO21x2W13JEr.LQy0ctEv42",
+        "stellarAccount": "GDZ25M2SASKIKXAINZD3STOKW7Z7SQK6CIE37QCT4QCT3WDU7CANN2UZ",
+        "stellarSeed": "U2FsdGVkX196+q+3W7pKYUgXSozjXuNu1k9KkMuqsYK2PN1fZfImHB5b3Xion07A+yMFuY5wypLtv8QwvBSd2a0PKL1N3CL77RS0nInUw4Q=",
+        "createdAt": "2020-12-04T22:42:03.335Z",
+        "updatedAt": "2020-12-04T22:42:03.335Z",
+        "__v": 0
+    }
+}
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
