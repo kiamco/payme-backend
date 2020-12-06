@@ -19,6 +19,9 @@ Disclaimer: I used this project an an oppurtunity to learn Typescript. Im not su
   
   note: this should be made with stellars test network because we wont be able to get anchors to give us an API key without complete functional product. This app also needs to get audited before its approved for real money transactions. 
   
+# Stretch
+
+  - [ ] it will be cool if we can convert XLM to different currencies.
   
 # Endpoints
 
