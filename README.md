@@ -1,6 +1,8 @@
 # payme-backend
 P2P platform using the the Stellar Ledger
 
+Disclaimer: I used this project an an oppurtunity to learn Typescript. Im not sure if Im using it right though...
+
 # Project Description
 
   - An API made with Node.js, Express, and MongoDb that should give the user the ability to transfer fiat currencies throught the use of the Stellar Ledger
