@@ -1,4 +1,4 @@
-import Express, {Request, Response, request} from 'express';
+import Express, {Request, Response} from 'express';
 import Bcrypt from 'bcryptjs';
 import User from '../models/userModel';
 import { Keypair, Networks, Operation, Server, TransactionBuilder } from 'stellar-sdk';
@@ -111,7 +111,7 @@ const decryptSecret = async(req:Request, res:Response) => {
 };
 
 const checkBalance = async (publicKey: any) => {
-    const server = new Server('https://horizon-testnet.stellar.org');
+    const server = new Server(`${process.env.STELLAR_SERVER}`);
 
     const account = await server.loadAccount(publicKey);
 
