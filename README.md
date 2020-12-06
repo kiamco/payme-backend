@@ -21,7 +21,7 @@ Disclaimer: I used this project an an oppurtunity to learn Typescript. Im not su
   
 # Stretch
 
-  - [ ] it will be cool if we can convert XLM to different currencies.
+  - [ ] it will be cool if we can convert XLM to different types of currencies ie: dollar, peso, or something.
   
 # Endpoints
 
