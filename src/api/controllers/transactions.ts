@@ -9,7 +9,7 @@ const server = new Server(`${process.env.STELLAR_SERVER}`);
 
 
 const sendPayment = async (req: Request, res: Response) => {
-    const {destinationId, originId, amount,origin, email, password} = req.body;
+    const {destinationId, originId, amount, email, password} = req.body;
 
     // create transaction
     try {
@@ -21,7 +21,7 @@ const sendPayment = async (req: Request, res: Response) => {
           }).addOperation(Operation.payment({
             destination: destinationId,
             asset: Asset.native(),
-            amount: '100'
+            amount: amount
           })).build();
 
         //TODO: decrypt secret from user

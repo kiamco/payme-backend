@@ -19,7 +19,6 @@ const provisionFundsTestNet = async (keypair: any) => {
 
 const checkBalance = async (publicKey: any) => {
     const server = new Server(`${process.env.STELLAR_SERVER}`);
-    console.log(process.env.STELLAR_SERVER)
     const account = await server.loadAccount(publicKey);
 
     return account;
@@ -72,7 +71,6 @@ const createUser = async ( req: Request, res: Response) => {
 
 const login = async (req: Request,res: Response) => {
     const {email,token, name, stellarAccount} = req.body;
-    console.log(req.body);
     try {   
         const account = await checkBalance(stellarAccount);
         
