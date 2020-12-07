@@ -102,6 +102,59 @@ Disclaimer: I used this project an an oppurtunity to learn Typescript. Im not su
  
  ----------------------------------------------------------------------------------------------------------------------------------------------------
   
+  
+3.) transact
+
+  | endpoint | req | description |
+  |----------|-----|-------------|
+  | /transact | post | make transactions to different users |
+  
+ ### body
+ ```
+{
+    "originId": "GCVYQZFD3CBYXWLBIT7GEL6GGLAAZU4WYDNQBK36MMF5RGLTWFL6MSHM",
+    "destinationId": "GBKOF2Z2HZVEPAMAQ6S6MP7QIMVGYBTFCF32CQBBAM75OCUYU7PEB4HG",
+    "amount": "200.50"
+}
+
+```
+
+ ### response
+
+ ```
+{
+    "message": "succesful transaction"
+}
+ ```
+ 
+ ----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+4.)  decrypt
+
+  | endpoint | req | description |
+  |----------|-----|-------------|
+  | /decrypt | post | decrypts users secret key |
+  
+ ### body
+ ```
+{
+    "email": "sample6@gmail.com",
+    "password": "putangina1"
+}
+
+
+```
+
+ ### response
+
+ ```
+{
+    "message": "decrypted secret",
+    "stellarSecret": "SAFF6JXRGVEWXJ3SQ2KYMBD5WL5CHMJSARMJA537Y5CD6BSZ7HCHGS2O"
+}
+ ```
+
 
 # Tech stack
   
