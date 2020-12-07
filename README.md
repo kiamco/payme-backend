@@ -11,7 +11,7 @@ Disclaimer: I used this project an an oppurtunity to learn Typescript. Im not su
 
   - [x] account creation
   
-  - [ ] user to user transactions (also use test server)
+  - [x] user to user transactions (also use test server)
   
   - [ ] convert fiat currenices to crypto during transfer (use stellars test anhor server)
   
