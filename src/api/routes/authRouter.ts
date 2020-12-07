@@ -6,8 +6,8 @@ import Express from 'express';
 const Router = Express.Router();
 
 Router.post('/register',createUser);
-Router.post('/login', verifyUser,login)
-Router.post('/decrypt', decryptSecret);
+Router.get('/login', verifyUser,login)
+Router.get('/decrypt', decryptSecret);
 
 
 export default Router;

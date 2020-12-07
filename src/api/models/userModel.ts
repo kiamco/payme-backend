@@ -30,4 +30,13 @@ const UserSchema:Schema = new Schema({
 
 const User = Mongoose.model('User', UserSchema);
 
+export const findUser = async(email:String) => {
+    const user = await User.find({
+        email: email
+    });
+
+    return user;
+}
+
+
 export default User

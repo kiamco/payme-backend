@@ -4,6 +4,9 @@ import User from '../models/userModel';
 import { Keypair, Networks, Operation, Server, TransactionBuilder } from 'stellar-sdk';
 import Axios from 'axios';
 import { AES, enc} from 'crypto-js';
+import dotenv  from 'dotenv';
+const {config} = dotenv;
+config();
 
 const provisionFundsTestNet = async (keypair: any) => {
     try{
@@ -12,6 +15,15 @@ const provisionFundsTestNet = async (keypair: any) => {
         console.error(e);
     };
 };
+
+
+const checkBalance = async (publicKey: any) => {
+    const server = new Server(`${process.env.STELLAR_SERVER}`);
+    console.log(process.env.STELLAR_SERVER)
+    const account = await server.loadAccount(publicKey);
+
+    return account;
+}
 
 
 const createUser = async ( req: Request, res: Response) => {
@@ -60,9 +72,8 @@ const createUser = async ( req: Request, res: Response) => {
 
 const login = async (req: Request,res: Response) => {
     const {email,token, name, stellarAccount} = req.body;
-
+    console.log(req.body);
     try {   
-
         const account = await checkBalance(stellarAccount);
         
         res.status(201).json({
@@ -109,14 +120,6 @@ const decryptSecret = async(req:Request, res:Response) => {
     
 
 };
-
-const checkBalance = async (publicKey: any) => {
-    const server = new Server(`${process.env.STELLAR_SERVER}`);
-
-    const account = await server.loadAccount(publicKey);
-
-    return account;
-}
 
 export {
     createUser,
