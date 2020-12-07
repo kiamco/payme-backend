@@ -23,7 +23,7 @@ function genToken(email: String, _id: String ) {
 }
 
 export const verifyUser = async (req: Request, res:Response, next:NextFunction) => {
-    const {email, _id, password} = req.body;
+    const {email, password} = req.body;
     // const token = genToken(email, _id);
 
     try {

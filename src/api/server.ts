@@ -4,6 +4,7 @@ import Cors from 'cors';
 import Mongoose from 'mongoose';    
 import dotenv from 'dotenv';
 import Auth from './routes/authRouter';
+import Transact from './routes/transactionRouter';
 
 const {config} = dotenv;
 config();
@@ -15,7 +16,8 @@ server.use(Express.json());
 server.use(Cors());
 server.use(Helmet());
 
-server.use(Auth)
+server.use(Auth);
+server.use(Transact);
 
 //establish connection to databse 
 // const DB_CONNECTION = "mongodb://root:rootpassword@0.0.0.0:27017"
