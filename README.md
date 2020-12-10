@@ -25,6 +25,8 @@ Disclaimer: I used this project an an oppurtunity to learn Typescript. Im not su
   
 # Endpoints
 
+link for temporary postman docs: https://documenter.getpostman.com/view/7751062/TVmV5DtL
+
 1.) registration
 
   | endpoint | req | description |
