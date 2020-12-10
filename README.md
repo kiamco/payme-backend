@@ -13,7 +13,7 @@ Disclaimer: I used this project an an oppurtunity to learn Typescript. Im not su
   
   - [x] user to user transactions (also use test server)
   
-  - [ ] convert fiat currenices to crypto during transfer (use stellars test anhor server)
+  - [ ] convert fiat currenices to crypto during transfer (use stellars test anchor server)
   
   - [ ] reset password for user accounts
   
